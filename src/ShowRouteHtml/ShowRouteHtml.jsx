@@ -1,7 +1,6 @@
-import styles from './showRoute.module.css';
+import styles from './showRouteHtml.module.css';
 
 function ShowRoutes(){
-
 }
 
 export default ShowRoutes
