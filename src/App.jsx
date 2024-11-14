@@ -1,5 +1,6 @@
 import NavigationBar from "./Navigation/Nav.jsx";
-import ShowRoutesHtml from "./ShowRouteHtml/ShowRouteHtml.jsx"
+import ShowRoutesHtml from "./ShowRouteHtml/ShowRouteHtml.jsx";
+import FilterProductLayout from "./Layouts/FilterProductLayout.jsx";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
         <>
             <NavigationBar/>
             <ShowRoutesHtml/>
+            <FilterProductLayout/>
         </>
     );
 
