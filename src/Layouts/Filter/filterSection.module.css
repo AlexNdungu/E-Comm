@@ -53,6 +53,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-weight: 500;
+    color: #414141;
+}
+
+.brand_span_and_arrow span{
+    font-size: 14px;
 }
 
 .arrow_up_down {
@@ -62,4 +70,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    fill: #414141;
+}
+
+.arrow_up_down svg {
+    width: 13px;
+}
+
+.search_brand_section {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_brand_section input {
+    width: 260px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: #406CEE;
+    padding-left: 10px;
+    background-color: #F4F4F4;
+    border: 2px solid #F4F4F4;
+}
+
+.search_brand_section input:focus {
+    border: 2px solid #406CEE;
 }
