@@ -70,8 +70,8 @@
     top: 0;
     right: 0;
     width: max-content !important;
-    min-width: 25px !important;
-    height: 25px !important;
+    min-width: 20px !important;
+    height: 20px !important;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
 
 .display_cart_nums span {
     margin: 5px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .div_display_user_details {

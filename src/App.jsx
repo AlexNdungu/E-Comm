@@ -1,14 +1,10 @@
-import NavigationBar from "./Navigation/Nav.jsx";
-import ShowRoutesHtml from "./ShowRouteHtml/ShowRouteHtml.jsx";
-import FilterProductLayout from "./Layouts/FilterProductLayout.jsx";
+import ProductsPage from "./Pages/Products.jsx";
 
 function App() {
 
-    return(
+    return( 
         <>
-            <NavigationBar/>
-            <ShowRoutesHtml/>
-            <FilterProductLayout/>
+            <ProductsPage/>
         </>
     );
 
