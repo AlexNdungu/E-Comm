@@ -23,6 +23,8 @@ function ProductSections(){
             </div>
             <div className={styles.product_display_section}>
                 <SingleProduct/>
+                <SingleProduct/>
+                <SingleProduct/>
             </div>
         </div>
     );
