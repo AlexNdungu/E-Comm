@@ -1,4 +1,5 @@
 import styles from './productsSection.module.css';
+import SingleProduct from '../SingleProduct/SingleProduct.jsx';
 
 function ProductSections(){
     return(
@@ -21,6 +22,7 @@ function ProductSections(){
                 </div>
             </div>
             <div className={styles.product_display_section}>
+                <SingleProduct/>
             </div>
         </div>
     );
