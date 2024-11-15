@@ -20,6 +20,8 @@ function ProductSections(){
                     </div>
                 </div>
             </div>
+            <div className={styles.product_display_section}>
+            </div>
         </div>
     );
 }

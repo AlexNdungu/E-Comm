@@ -65,6 +65,7 @@
     fill: #414141;
     color: #414141;
     padding: 13px;
+    cursor: pointer;
 }
 
 .sort_by_section svg {
@@ -81,4 +82,15 @@
     color: #414141;
     font-weight: 600;
     font-size: 15px;
+}
+
+.product_display_section {
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
 }
