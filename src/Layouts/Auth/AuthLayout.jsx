@@ -1,4 +1,7 @@
 import styles from './AuthLayout.module.css';
+import EmailInput from './Email/EmailInput.jsx';
+import PassInput from './Password/PassInput.jsx';
+
 
 function AuthLogin(){
     return(
