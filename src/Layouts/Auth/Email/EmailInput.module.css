@@ -1,0 +1,9 @@
+.email_input {
+    width: 350px !important;
+    height: 35px !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+}

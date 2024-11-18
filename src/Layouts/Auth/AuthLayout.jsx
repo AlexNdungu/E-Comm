@@ -10,6 +10,7 @@ function AuthLogin(){
             <div className={styles.log_lay_form}>
                 <h2>Create An Account</h2>
                 <span>Enter Your Details And Start Selling Now.</span>
+                <EmailInput/>
             </div>
         </div>
     );
