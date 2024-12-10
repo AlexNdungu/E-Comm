@@ -1,0 +1,27 @@
+.password_input {
+    width: 350px !important;
+    height: 35px !important;
+    border-radius: 5px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EFEFEF;
+}
+
+.password_input svg {
+    width: 20px;
+    height: 20px;
+    fill: #ACACAC;
+}
+
+.password_input input {
+    width: 280px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    color: #406CEE;
+    font-size: 15px;
+}

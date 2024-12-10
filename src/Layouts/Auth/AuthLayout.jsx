@@ -11,6 +11,8 @@ function AuthLogin(){
                 <h2>Create An Account</h2>
                 <span>Enter Your Details And Start Selling Now.</span>
                 <EmailInput/>
+                <PassInput placeholder="Password"/>
+                <PassInput placeholder="Password Again"/>
             </div>
         </div>
     );

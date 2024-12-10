@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-.main_login_layout div {
+.log_lay_form,.log_lay_icon {
     width: 50% !important;
     height: 100% !important;
     display: flex;
@@ -14,4 +14,8 @@
     flex-direction: column;
     justify-content: center;
     color: #414141;
+}
+
+.log_lay_icon {
+    background-color: #D3DBFF;
 }
