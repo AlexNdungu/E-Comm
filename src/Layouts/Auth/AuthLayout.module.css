@@ -6,6 +6,17 @@
     justify-content: space-between;
 }
 
+h2 {
+    margin-bottom: 15px;
+    color: #414141;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #414141;
+}
+
 .log_lay_form,.log_lay_icon {
     width: 50% !important;
     height: 100% !important;
