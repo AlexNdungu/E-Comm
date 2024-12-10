@@ -19,3 +19,23 @@
 .log_lay_icon {
     background-color: #D3DBFF;
 }
+
+.have_an_account_section {
+    height: 40px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.have_an_account_section span:nth-child(1){
+    color: #414141;
+    margin-right: 10px;
+}
+
+.have_an_account_section span:nth-child(2){
+    color: #406CEE;
+}
+

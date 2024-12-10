@@ -4,7 +4,7 @@ import PassInput from './Password/PassInput.jsx';
 import Button from './Btn/Button.jsx';
 
 
-function AuthLogin(){
+function AuthLogin(props){
     return(
         <div className={styles.main_login_layout}>
             <div className={styles.log_lay_icon}></div>
@@ -16,6 +16,10 @@ function AuthLogin(){
                     <PassInput placeholder="Password"/>
                     <PassInput placeholder="Password Again"/>
                     <Button span="Create An Account" />
+                    <div className={styles.have_an_account_section}>
+                        <span>{props.have}</span>
+                        <span>{props.login}</span>
+                    </div>
                 </div>
             </div>
         </div>

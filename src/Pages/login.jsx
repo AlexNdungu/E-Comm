@@ -2,7 +2,7 @@ import AuthLogin from '../Layouts/Auth/AuthLayout.jsx'
 
 function Login(){
     return(
-        <AuthLogin/>
+        <AuthLogin have="Have An Account ?" login="Log In"/>
     );
 }
 
