@@ -1,12 +1,13 @@
 .password_input {
     width: 350px !important;
-    height: 35px !important;
+    height: 40px !important;
     border-radius: 5px;
     padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: #EFEFEF;
+    margin-top: 15px;
 }
 
 .password_input svg {
