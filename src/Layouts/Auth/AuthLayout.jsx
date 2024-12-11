@@ -10,12 +10,12 @@ function AuthLogin(props){
             <div className={styles.log_lay_icon}></div>
             <div className={styles.log_lay_form}>
                 <div className={styles.inner_log_lay_form}>
-                    <h2>Create An Account</h2>
-                    <h4>Enter Your Details And Start Selling Now.</h4>
+                    <h2>{props.h2}</h2>
+                    <h4>{props.h4}</h4>
                     <EmailInput/>
                     <PassInput placeholder="Password"/>
                     <PassInput placeholder="Password Again"/>
-                    <Button span="Create An Account" />
+                    <Button span={props.btn_text}/>
                     <div className={styles.have_an_account_section}>
                         <span>{props.have}</span>
                         <span>{props.login}</span>
