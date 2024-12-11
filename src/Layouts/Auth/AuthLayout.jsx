@@ -14,11 +14,11 @@ function AuthLogin(props){
                     <h4>{props.h4}</h4>
                     <EmailInput/>
                     <PassInput placeholder="Password"/>
-                    <PassInput placeholder="Password Again"/>
+                    {!props.login && <PassInput placeholder="Password Again"/>}
                     <Button span={props.btn_text}/>
                     <div className={styles.have_an_account_section}>
                         <span>{props.have}</span>
-                        <span>{props.login}</span>
+                        <span>{props.link}</span>
                     </div>
                 </div>
             </div>
