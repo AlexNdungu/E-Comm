@@ -8,7 +8,7 @@
 
 form {
     width: 400px;
-    height: 500px;
+    height: 450px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -130,6 +130,7 @@ form textarea {
     min-height: 40px;
     border-radius: 5px;
     height: max-content;
+    display: none;
     background-color: aqua;
     top: calc(100% + 5px);
 }
