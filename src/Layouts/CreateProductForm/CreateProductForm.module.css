@@ -1,8 +1,87 @@
 .createProductSection {
     width: 100%;
     height: calc(100vh - 60px);
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+form {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+form input {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: #406CEE;
+}
+
+form textarea {
+    width: 350px;
+    height: 100px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 10px;
+    color: #406CEE;
+}
+
+.upload_product_image {
+    display: none;
+}
+
+.select_file_section {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.select_file_btn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select_file_btn svg {
+    width: 22px;
+    fill: #414141;
+}
+
+.select_file_show_name {
+    width: calc(100% - 50px);
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #406CEE;
+    background-color: white;
 }
