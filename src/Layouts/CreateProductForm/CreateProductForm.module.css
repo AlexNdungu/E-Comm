@@ -8,7 +8,7 @@
 
 form {
     width: 400px;
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -84,4 +84,52 @@ form textarea {
     font-weight: 400;
     color: #406CEE;
     background-color: white;
+}
+
+.category_drop_down {
+    position: relative;
+    width: 350px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.inner_category_drop_down {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    color: #414141;
+    fill: #414141;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.inner_category_drop_down:hover {
+    color: #406CEE;
+    fill: #406CEE;
+}
+
+.inner_category_drop_down svg {
+    width: 16px;
+}
+
+.category_drop_down_component_section {
+    position: absolute;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px;
+    height: max-content;
+    background-color: aqua;
+    top: calc(100% + 5px);
 }
