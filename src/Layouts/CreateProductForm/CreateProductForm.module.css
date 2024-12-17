@@ -124,6 +124,10 @@ form textarea {
     width: 16px;
 }
 
+.categoryInput {
+    display: none;
+}
+
 .category_drop_down_component_section {
     position: absolute;
     width: 100%;
