@@ -1,6 +1,7 @@
 import styles from "./CreateProductForm.module.css"
 import Button from "../Auth/Btn/Button";
 import React, { useRef, useState, useEffect } from "react";
+import axios from "axios";
 
 function CreateProductForm(){
 
@@ -25,6 +26,20 @@ function CreateProductForm(){
     const showCategoryDropDown = () => {
         setVisibility(!isVisible);
     };
+
+    const [data,setData] = useState(null);
+    const [error, setError] = useState(null);
+    useEffect(() => {
+        const fetchData = async () => {
+            try{
+                const response = await axios.get("http://localhost:8080/api/category");
+                console.log(response.data);
+            }catch(error){
+                console.log(error);
+            }
+        };
+        fetchData();
+    }, []);
 
     return(
         <>
