@@ -1,7 +1,24 @@
 import styles from './productsSection.module.css';
 import SingleProduct from '../SingleProduct/SingleProduct.jsx';
+import React, { useRef, useState, useEffect } from "react";
+import axios from "axios";
 
 function ProductSections(){
+
+    const [products,setProducts] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try{
+                const response = await axios.get("http://localhost:8080/api/product");
+                setProducts(response.data)
+                console.log(response.data)
+            }catch(error){
+                console.log(error);
+            }
+        };
+        fetchData();
+    }, []);
+
     return(
         <div className={styles.products_section}>
             <div className={styles.upper_layout_sort_by_section}>
