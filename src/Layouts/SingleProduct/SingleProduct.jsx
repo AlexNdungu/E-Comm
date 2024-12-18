@@ -1,11 +1,11 @@
 import styles from './SingleProduct.module.css';
-import productImage from './img.jpg';
+// import productImage from './img.jpg';
 
 function SingleProduct(props){
     return(
         <div className={styles.singleProductDisplay}>
             <div className={styles.displayProductImage}>
-                <img src={productImage} alt="product image" />
+                <img src={props.image} alt="product image" />
             </div>
             <div className={styles.display_item_descriptions}>
                 <div><span>Unique</span></div>

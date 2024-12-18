@@ -39,7 +39,7 @@ function ProductSections(){
             </div>
             <div className={styles.product_display_section}>
                 {products.map(product => 
-                    <SingleProduct key={product.id} name={product.name} price={product.price}/>
+                    <SingleProduct key={product.id} name={product.name} price={product.price} image={product.imagePath}/>
                 )}
             </div>
         </div>
