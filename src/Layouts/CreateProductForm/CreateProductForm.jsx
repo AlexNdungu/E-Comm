@@ -25,7 +25,6 @@ function CreateProductForm(){
 
     const categoryInput = useRef(null)
     const updateCategory = (category) => {
-        console.log(categoryInput.current)
         categoryInput.current.value = category.id;
         setVisibility(!isVisible);
     };
@@ -38,7 +37,6 @@ function CreateProductForm(){
     const [productName, setProductName] = useState("");
     const [productPrice, setProductPrice] = useState("");
     const [description, setDescription] = useState("");
-    const [categoryId, setCategoryId] = useState("");
     const [file, setFile] = useState(null);
     const handleFile = (event) => {
         setFile(event.target.files[0]);
@@ -59,7 +57,7 @@ function CreateProductForm(){
         formData.append("name", productName);
         formData.append("price", productPrice);
         formData.append("description", description);
-        formData.append("categoryId", categoryId);
+        formData.append("categoryId", categoryInput.current.value);
         if (file) {
             formData.append("file", file);
         }
@@ -88,7 +86,7 @@ function CreateProductForm(){
                             <span>Product Category</span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                         </div>
-                        <input type="text" className={styles.categoryInput} ref={categoryInput} value={categoryId} onChange={(e) => setCategoryId(e.target.value)}/>
+                        <input type="text" className={styles.categoryInput} ref={categoryInput}/>
                         <div className={styles.category_drop_down_component_section} style={{display: isVisible ? 'flex' : 'none'}} >
                             {categories.map(category => 
                                 <div key={category.id} className={styles.drop_down_object} onClick={() => updateCategory(category)}>
