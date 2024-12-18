@@ -68,7 +68,7 @@ function CreateProductForm(){
                 "Content-Type": "multipart/form-data",
                 },
             });
-            console.log("Product created successfully", response.data);
+            console.log("Product created successfully");
         } catch (error) {
             console.error("Error creating product", error);
         }
