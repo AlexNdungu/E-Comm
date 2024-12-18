@@ -10,8 +10,7 @@ function ProductSections(){
         const fetchData = async () => {
             try{
                 const response = await axios.get("http://localhost:8080/api/product");
-                setProducts(response.data)
-                console.log(response.data)
+                setProducts(response.data);
             }catch(error){
                 console.log(error);
             }
@@ -39,7 +38,9 @@ function ProductSections(){
                 </div>
             </div>
             <div className={styles.product_display_section}>
-                <SingleProduct/>
+                {products.map(product => 
+                    <SingleProduct key={product.id} name={product.name} price={product.price}/>
+                )}
             </div>
         </div>
     );

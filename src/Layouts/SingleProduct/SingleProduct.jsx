@@ -1,7 +1,7 @@
 import styles from './SingleProduct.module.css';
 import productImage from './img.jpg';
 
-function SingleProduct(){
+function SingleProduct(props){
     return(
         <div className={styles.singleProductDisplay}>
             <div className={styles.displayProductImage}>
@@ -9,9 +9,9 @@ function SingleProduct(){
             </div>
             <div className={styles.display_item_descriptions}>
                 <div><span>Unique</span></div>
-                <div><h4>New Jacket Black</h4></div>
+                <div><h4>{props.name}</h4></div>
                 <div>
-                    <span>$400</span>
+                    <span>${props.price}</span>
                     <span>14 Left</span>
                 </div>
             </div>
